@@ -62,3 +62,24 @@ for(const key in distancia){
         console.log('No se encontro la distancia')
     }
 }
+
+// lenguaje tipado
+
+
+// for each
+nombrePlanetas.forEach((value,index,Array)=>{
+    console.log('planeta', index, value);
+})
+
+// Map
+nombrePlanetas.map((planetas,index)=>{
+    return(
+        console.log(`El planeta ${planetas} tiene tamaño de :${tamaño[index]}`)
+    )
+})
+
+let resultadoMap = nombrePlanetas.map((planetas,index)=>{
+    return(`El planeta ${planetas} tiene tamaño de :${tamaño[index]}`)
+})
+
+console.log(resultadoMap);
